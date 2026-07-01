@@ -3,140 +3,139 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Federico Polloni — La cava degli specchi</title>
-  <meta name="description" content="La cava degli specchi, 2022, acrylic and oil on canvas, 120 × 100 cm. Federico Polloni." />
-  <meta property="og:title" content="Federico Polloni — La cava degli specchi" />
-  <meta property="og:description" content="2022, acrylic and oil on canvas, 120 × 100 cm." />
-  <meta property="og:image" content="la-cava-degli-specchi.jpg" />
+  <meta name="description" content="La cava degli specchi, 2022, acrylic and oil on canvas, 120 × 100 cm. Artwork by Federico Polloni." />
+
   <style>
-    :root {
-      --text: #111;
-      --muted: #666;
-      --line: #e8e8e8;
-      --bg: #fff;
+    * {
+      box-sizing: border-box;
     }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Helvetica, Arial, sans-serif;
-      font-size: 15px;
+      background: #ffffff;
+      color: #111111;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 12px;
       line-height: 1.45;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
+      font-weight: 400;
     }
+
     .page {
-      width: min(1180px, calc(100vw - 40px));
-      margin: 0 auto;
-      padding: 34px 0 54px;
+      width: 100%;
+      min-height: 100vh;
+      padding: 42px 48px 56px;
     }
+
     header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      gap: 20px;
-      margin-bottom: 42px;
-      color: var(--text);
-      letter-spacing: .01em;
+      align-items: flex-start;
+      margin-bottom: 70px;
     }
+
     header a {
-      color: inherit;
+      color: #111111;
       text-decoration: none;
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid #111111;
     }
-    header a:hover { border-bottom-color: currentColor; }
-    .role { color: var(--muted); font-size: 13px; }
-    main { display: grid; grid-template-columns: 1fr; gap: 26px; }
-    .image-wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-    img.artwork {
-      display: block;
-      width: min(760px, 100%);
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
-    }
-    .caption {
-      width: min(760px, 100%);
+
+    .work {
+      width: 60%;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: end;
-      border-top: 1px solid var(--line);
-      padding-top: 18px;
     }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .caption {
+      width: 60%;
+      margin: 24px auto 0;
+      text-align: left;
+    }
+
     h1 {
-      margin: 0 0 6px;
-      font-size: 15px;
+      margin: 0 0 10px;
+      font-size: 12px;
       font-weight: 400;
       font-style: italic;
+      line-height: 1.45;
     }
-    .details p { margin: 0; }
+
+    .meta {
+      margin: 0;
+    }
+
+    .meta span {
+      display: block;
+    }
+
     .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 40px;
-      padding: 0 18px;
-      border: 1px solid var(--text);
-      color: var(--text);
+      display: inline-block;
+      margin-top: 28px;
+      padding: 10px 16px;
+      border: 1px solid #111111;
+      color: #111111;
       text-decoration: none;
-      font-size: 13px;
-      letter-spacing: .01em;
-      transition: background .2s ease, color .2s ease;
-      white-space: nowrap;
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
-    .button:hover { background: var(--text); color: var(--bg); }
-    footer {
-      width: min(760px, 100%);
-      margin: 54px auto 0;
-      color: var(--muted);
-      font-size: 13px;
+
+    .button:hover {
+      background: #111111;
+      color: #ffffff;
     }
-    footer a { color: inherit; text-decoration: none; border-bottom: 1px solid currentColor; }
-    @media (max-width: 720px) {
-      .page { width: calc(100vw - 26px); padding-top: 22px; }
-      header { margin-bottom: 28px; }
-      .role { display: none; }
-      img.artwork { width: 100%; max-height: none; }
-      .caption { grid-template-columns: 1fr; gap: 18px; }
-      .button { width: 100%; }
+
+    @media (max-width: 900px) {
+      .page {
+        padding: 28px 22px 40px;
+      }
+
+      header {
+        margin-bottom: 36px;
+      }
+
+      .work,
+      .caption {
+        width: 100%;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="page">
+
     <header>
-      <a href="mailto:fefedrico@gmail.com">Federico Polloni</a>
-      <span class="role">Visual artist</span>
+      <div>Federico Polloni</div>
+      <a href="https://www.instagram.com/federicopolloni/" target="_blank" rel="noopener">Instagram</a>
     </header>
 
     <main>
-      <div class="image-wrap">
-        <img class="artwork" src="la-cava-degli-specchi.jpg" alt="La cava degli specchi, 2022, acrylic and oil on canvas, 120 × 100 cm, by Federico Polloni" />
+      <div class="work">
+        <img src="la-cava-degli-specchi.jpg" alt="La cava degli specchi, Federico Polloni" />
       </div>
 
-      <section class="caption" aria-label="Artwork information">
-        <div class="details">
-          <h1>La cava degli specchi</h1>
-          <p>2022</p>
-          <p>Acrylic and oil on canvas</p>
-          <p>120 × 100 cm</p>
-        </div>
-        <a class="button" href="#" aria-label="View full portfolio PDF">View Full Portfolio (PDF)</a>
-      </section>
+      <div class="caption">
+        <h1>La cava degli specchi</h1>
+
+        <p class="meta">
+          <span>2022</span>
+          <span>Acrylic and oil on canvas</span>
+          <span>120 × 100 cm</span>
+        </p>
+
+        <a class="button" href="https://www.dropbox.com/scl/fi/4qra2wsh8mpn7952mjhrw/Polloni_Federico_portfolio2026_WEB.pdf?rlkey=1j5lgm0y8pdfgc29x3oeuvrpf&amp;st=pvcuxuuo&amp;raw=1" target="_blank" rel="noopener">
+          View Full Portfolio (PDF)
+        </a>
+      </div>
     </main>
 
-    <footer>
-      <span>Contact: </span><a href="mailto:fefedrico@gmail.com">fefedrico@gmail.com</a>
-    </footer>
   </div>
 </body>
 </html>
