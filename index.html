@@ -8,14 +8,12 @@
   <meta name="description" content="La cava degli specchi, 2022, acrylic and oil on canvas, 120 × 100 cm. Artwork by Federico Polloni." />
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: #ffffff;
-      color: #111111;
+      background: #fff;
+      color: #222;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 12px;
       line-height: 1.45;
@@ -35,10 +33,17 @@
       margin-bottom: 70px;
     }
 
-    header a {
-      color: #111111;
+    .name {
+      font-size: 14px;
+      line-height: 1.35;
+      font-weight: 400;
+    }
+
+    header a,
+    .caption a {
+      color: #111;
       text-decoration: none;
-      border-bottom: 1px solid #111111;
+      border-bottom: 1px solid #111;
     }
 
     .work {
@@ -47,18 +52,18 @@
     }
 
     img {
-    display: block;
-    max-width: min(78vw, 1400px);
-    max-height: 82vh;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    object-fit: contain;
-}
+      display: block;
+      max-width: min(78vw, 1400px);
+      max-height: 82vh;
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      object-fit: contain;
+    }
 
     .caption {
       width: 60%;
-      margin: 24px auto 0;
+      margin: 14px auto 0;
       text-align: left;
     }
 
@@ -78,21 +83,11 @@
       display: block;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 28px;
-      padding: 10px 16px;
-      border: 1px solid #111111;
-      color: #111111;
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .button:hover {
-      background: #111111;
-      color: #ffffff;
+    .links {
+      margin-top: 24px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
     }
 
     @media (max-width: 900px) {
@@ -116,13 +111,15 @@
   <div class="page">
 
     <header>
-      <div>Federico Polloni</div>
-      <a href="https://www.instagram.com/federicopolloni/" target="_blank" rel="noopener">Instagram</a>
+      <div class="name">Federico Polloni</div>
+      <a href="https://www.dropbox.com/scl/fi/4qra2wsh8mpn7952mjhrw/Polloni_Federico_portfolio2026_WEB.pdf?rlkey=1j5lgm0y8pdfgc29x3oeuvrpf&amp;st=pvcuxuuo&amp;raw=1" target="_blank" rel="noopener">Portfolio</a>
     </header>
 
     <main>
       <div class="work">
-        <img src="la-cava-degli-specchi.jpg" alt="La cava degli specchi, Federico Polloni" />
+        <a href="la-cava-degli-specchi.jpg" target="_blank">
+          <img src="la-cava-degli-specchi.jpg" alt="La cava degli specchi">
+        </a>
       </div>
 
       <div class="caption">
@@ -134,9 +131,9 @@
           <span>120 × 100 cm</span>
         </p>
 
-        <a class="button" href="https://www.dropbox.com/scl/fi/4qra2wsh8mpn7952mjhrw/Polloni_Federico_portfolio2026_WEB.pdf?rlkey=1j5lgm0y8pdfgc29x3oeuvrpf&amp;st=pvcuxuuo&amp;raw=1" target="_blank" rel="noopener">
-          View Full Portfolio (PDF)
-        </a>
+        <div class="links">
+          <a href="https://www.instagram.com/federicopolloni/" target="_blank" rel="noopener">Instagram</a>
+        </div>
       </div>
     </main>
 
